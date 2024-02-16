@@ -3,7 +3,7 @@ const leftEye = document.querySelector("#lefteye")
 const rightEye = document.querySelector("#righteye")
 const userInput = document.querySelector("#userInput")
 const passInput = document.querySelector("#passInput")
-
+console.log(passInput.length);
 let userNameIn = 0 
 
 let leftEyeTop = 75;
@@ -22,9 +22,9 @@ console.log(userInput.length);
 const userInputFocus = () => {
     console.log("focus");
 
-    let eyeUserNamePosirion = setInterval(() => {
+    let eyeUserNamePosition = setInterval(() => {
         if (rigthEyePaddingTop == 10) {
-            clearInterval(eyeUserNamePosirion)
+            clearInterval(eyeUserNamePosition)
         }
 
         rightEye.style.paddingTop = rigthEyePaddingTop + "px"
@@ -41,9 +41,9 @@ const userInputFocus = () => {
 }
 const userInputBlur = () => {
     console.log("blur");
-    let eyeUserNamePosirion = setInterval(() => {
+    let eyeUserNamePosition = setInterval(() => {
         if (rigthEyePaddingTop == 0) {
-            clearInterval(eyeUserNamePosirion)
+            clearInterval(eyeUserNamePosition)
         }
 
         rightEye.style.paddingTop = rigthEyePaddingTop + "px"
@@ -83,6 +83,7 @@ const userkyedown = (event) => {
         }
         leftEyePaddingLeft = Math.abs(leftEyePaddingLeft - 1)
         rightEyePaddingLeft = Math.abs(rightEyePaddingLeft - 1)
+        userNameIn = Math.abs
 
 
     } else if (leftEyePaddingLeft < 20) {
