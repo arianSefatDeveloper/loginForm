@@ -1,7 +1,7 @@
 # Creative Login Form
 ![bob pic](./defultpic.PNG)
 
-- #### this is a creative spongy bob login form 
+- #### this is a creative Bob Sponge login form 
 
 - #### eays can move when you focus and blure on inputs
 
